@@ -1,0 +1,21 @@
+[package]
+name = "m1_boot"
+version = "0.1.0"
+edition = "2024"
+
+
+
+[workspace]
+resolver = "3"
+members = ["h123"]
+
+[dependencies]
+
+[build-dependencies]
+bootloader = "0.11"
+h123 = {path = "h123", artifact = "bin", target = "x86_64-unknown-none"}
+
+
+
+
+
